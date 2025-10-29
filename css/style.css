@@ -6,7 +6,7 @@
 }
 
 body {
-    background: url(../image/milky_way.jpg) no-repeat;
+    background: url("https://ivan-alexis-tan.github.io/My-website/image/milky_way.jpg") no-repeat;
     background-size: cover;
     background-position: center;
     min-height: 100vh;
