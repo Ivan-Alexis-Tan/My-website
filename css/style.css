@@ -1,0 +1,157 @@
+* {
+    font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(/Projects/GitHub/My-website/image/milky_way.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 160, 196, 0.762);
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+/* ============================================== */
+/* =================== HEADER ===================*/
+/* ============================================== */
+
+/* Navigation Configuration Style */
+.navi_config a {
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+/* ============================================== */
+/* =================== BODY =================== */
+/* ============================================== */
+
+/* Main Content */
+.main_content {
+    padding-top: 120px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.main_content .content .left {
+    display: flex;
+    justify-content: center;
+}
+
+/* ============================================== */
+/* ============================================== */
+/* Sections of Main Content */
+.section {
+    gap: 40px;
+    align-items: flex-start;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.section p {
+    position: relative;
+    color: white
+}
+
+.section .section_title {
+    color: white;
+}
+
+.section .subsection {
+    color: white;
+}
+
+/* ============================================== */
+/* ============================================== */
+/* Contents of Each Section */
+.content {
+    display: flex;
+    padding: 20px;
+}
+
+.left {
+    flex: 0 0 30%;
+}
+
+.right {
+    flex: 1;
+}
+
+/* ============================================== */
+/* =========== SPECIFIC CUSTOMIZATION ===========*/
+/* ============================================== */
+/* PROFILE SECTION */
+
+/* "Left" in Profile section  */
+.profile-section .content .left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* PFP */
+.pfp_circle {
+    width: 200px;          /* control size */
+    /*height: 150px;
+    border-radius: 50%;    /* makes it circular
+    object-fit: cover;     /* ensures image fills the circle */
+}
+
+/* ============================================== */
+/* ============================================== */
+/* CONTACTS SECTION */
+
+.contacts-section {
+    backdrop-filter: blur(25px);
+    background: #855501;
+}
+
+/* Subsection Config */
+.contacts-section .subsection {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Content Config */
+.contacts-section .subsection .content {
+    display:flex;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+}
+
+/* Content Image Config */
+.contacts-section .subsection img {
+    width: 30px;
+}
+
+.contacts-section .subsection .content .contact-link a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
