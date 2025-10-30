@@ -5,6 +5,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+}
+
 body {
     background: url("https://ivan-alexis-tan.github.io/My-website/image/milky_way.jpg") no-repeat;
     background-size: cover;
@@ -98,27 +103,95 @@ header {
     flex: 1;
 }
 
+.subsection_div {
+    margin: 20px auto;
+    width: 80%;
+    height: 2px;
+}
 /* ============================================== */
 /* =========== SPECIFIC CUSTOMIZATION ===========*/
 /* ============================================== */
 /* PROFILE SECTION */
 
-/* "Left" in Profile section  */
+.profile-section {
+    background-color: rgb(1, 98, 112);
+}
+
+/* "Left" Portion in Profile section  */
 .profile-section .content .left {
     display: flex;
     flex-direction: column;
     align-items: center;
-    color: white;
+    color: #d7d7d7;
 }
 
 /* PFP */
 .pfp_circle {
-    width: 200px;          /* control size */
+    width: 250px;          /* control size */
     /*height: 150px;
     border-radius: 50%;    /* makes it circular
     object-fit: cover;     /* ensures image fills the circle */
 }
 
+.profile_name {
+    color: white;
+    margin-top: -40px;
+}
+
+/* Paragraph Contents */
+.profile-section .content .right p {
+    margin-bottom: 1.6em;
+    line-height: 1.6;
+    color: #d7d7d7;
+}
+
+/* ============================================== */
+/* Core Skills Label */
+.profile-section .subsection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:10px;
+}
+
+/* Skill Lists */
+.profile-section .skill_lists {
+    display: flex;
+    flex-direction: row;            /*<- makes the skill boxes side by side */
+    align-items: flex-start;        /*<- aligns elements' tops evenly */
+    justify-content: center;        /*<- centers elements horizontally */
+    gap: 25px;                     /*<- adds space between the elements */
+    flex-wrap: wrap;                /*<- allows wrapping on small screens */
+}
+
+.profile-section .skill_lists > div {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;                   /* fixed width for even alignment */
+    color: #d7d7d7;
+    text-align: left;
+}
+
+.skill_lists .skill-title {
+    color: white;
+}
+
+.skills h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.skills li {
+    margin-bottom: 0.3rem;
+    color: #e0e0e0;
+}
 /* ============================================== */
 /* ============================================== */
 /* CONTACTS SECTION */
@@ -150,8 +223,14 @@ header {
     width: 30px;
 }
 
+/* Links */
 .contacts-section .subsection .content .contact-link a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+}
+
+/* Links when hovering */
+.contacts-section .subsection .content .contact-link a:hover {
+    text-decoration: underline;
 }
 
