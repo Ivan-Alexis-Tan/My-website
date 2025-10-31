@@ -142,7 +142,7 @@ header {
 .profile-section .content .right p {
     margin-bottom: 1.6em;
     line-height: 1.6;
-    color: #d7d7d7;
+    color: #ebebeb;
 }
 
 /* ============================================== */
@@ -177,21 +177,34 @@ header {
     color: white;
 }
 
-.skills h3 {
+.skill_lists h3 {
     font-size: 1.2rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
     color: #fff;
+    text-align: center;
 }
 
-.skills ul {
-    list-style-type: none;
+.skill_lists ul {
+    list-style-type: style type;
     padding-left: 0;
 }
 
-.skills li {
+.skill_lists li {
     margin-bottom: 0.3rem;
-    color: #e0e0e0;
+    color: #ebebeb;
 }
+
+/* ============================================== */
+/* ============================================== */
+/* PROJECTS SECTION */
+.projects-section .subsection .right .proj_descr {
+    margin-bottom: 20px;
+}
+
+.projects-section .subsection .right .proj_insights {
+    margin-bottom: 20px;
+}
+
 /* ============================================== */
 /* ============================================== */
 /* CONTACTS SECTION */
