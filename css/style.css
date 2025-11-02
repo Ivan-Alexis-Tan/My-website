@@ -30,6 +30,11 @@ header {
     z-index: 99;
 }
 
+header a{
+    text-decoration: None;
+    color: black;
+}
+
 /* ============================================== */
 /* =================== HEADER ===================*/
 /* ============================================== */
@@ -42,6 +47,11 @@ header {
     text-decoration: none;
     font-weight: 500;
     margin-left: 40px;
+}
+
+.navi_config a:hover {
+    text-decoration: underline;
+    color:white;
 }
 
 /* ============================================== */
@@ -79,8 +89,19 @@ header {
     color: white
 }
 
+/* Section Title */
 .section .section_title {
     color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Section Title Icon */
+.section .section_title img{
+    width: 40px;
+    height: 40px;
+    margin: 10px;
 }
 
 .section .subsection {
@@ -160,7 +181,7 @@ header {
     flex-direction: row;            /*<- makes the skill boxes side by side */
     align-items: flex-start;        /*<- aligns elements' tops evenly */
     justify-content: center;        /*<- centers elements horizontally */
-    gap: 25px;                     /*<- adds space between the elements */
+    gap: 25px;                      /*<- adds space between the elements */
     flex-wrap: wrap;                /*<- allows wrapping on small screens */
 }
 
@@ -173,10 +194,12 @@ header {
     text-align: left;
 }
 
+/* Skill List Title */
 .skill_lists .skill-title {
     color: white;
 }
 
+/* Skill List <h3> */
 .skill_lists h3 {
     font-size: 1.2rem;
     margin-bottom: 1rem;
@@ -184,11 +207,13 @@ header {
     text-align: center;
 }
 
+/* Skill List <ul> */
 .skill_lists ul {
     list-style-type: style type;
     padding-left: 0;
 }
 
+/* Skill List <li> */
 .skill_lists li {
     margin-bottom: 0.3rem;
     color: #ebebeb;
@@ -197,12 +222,62 @@ header {
 /* ============================================== */
 /* ============================================== */
 /* PROJECTS SECTION */
-.projects-section .subsection .right .proj_descr {
+
+/* Project Title (left side) */
+.projects-section .subsection .left {
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+/* Project Title (left side) <a> */
+.projects-section .subsection .left .div_subheader a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Project Title (left side) <a> when hovering*/
+.projects-section .subsection .left .div_subheader a:hover {
+    text-decoration: underline;
+}
+
+/* Project Title (left side) Project Type*/
+.projects-section .subsection .left .proj_type {
+    margin-top: 10px;
+}
+
+
+/* Project Content (right side) */
+.projects-section .subsection .right {
+    color: #ebebeb;
+}
+
+/* Project Content (right side) Description */
+.projects-section .subsection .right .proj_content {
     margin-bottom: 20px;
 }
 
-.projects-section .subsection .right .proj_insights {
+/* Project Content (right side) <p> */
+.projects-section .subsection .right .proj_content p{
+    color: #ebebeb;
+    margin-left: 15px;
+}
+
+/* Project Content (right side) <ul> */
+.projects-section .subsection .right ul {
+    margin-left: 20px;
+    color: #ebebeb;
+}
+
+/* Project Content (right side) Insights */
+/* .projects-section .subsection .right .proj_insights {
     margin-bottom: 20px;
+} */
+
+/* Project Title (right side) <h3> */
+.projects-section .subsection .right h3 {
+    margin-bottom: 3px;
+    color: white;
 }
 
 /* ============================================== */
@@ -236,13 +311,13 @@ header {
     width: 30px;
 }
 
-/* Links */
+/* Contact Links */
 .contacts-section .subsection .content .contact-link a {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(59, 219, 255);
 }
 
-/* Links when hovering */
+/* Contact Links when hovering */
 .contacts-section .subsection .content .contact-link a:hover {
     text-decoration: underline;
 }
